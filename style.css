@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #e3d1f8;
+  font-size: 2.3rem;
+}
+
+.btn {
+  margin: 2rem;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background: #a69e9e;
+}
+
+.palette {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content p {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-decoration: underline 1px solid;
+  letter-spacing: -0.2rem;
+}
+
+.colorBox {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(219, 217, 217, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.colorBox.copied {
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px 1px #fff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.colorBox:hover {
+  transform: scale(1.05);
+}
